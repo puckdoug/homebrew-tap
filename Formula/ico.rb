@@ -8,6 +8,7 @@ class Ico < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
+    bin.install bin/"ico"
   end
 
   test do

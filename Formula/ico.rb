@@ -6,8 +6,6 @@ class Ico < Formula
   license "MIT"
   head "https://github.com/puckdoug/ico.git", branch: "main"
 
-  depends_on "rust" => :build
-
   def install
     system "cargo", "install", *std_cargo_args
   end
